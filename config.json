@@ -1,0 +1,25 @@
+{
+    "ornl.summit"  : {
+        "project"  : "geo111",
+        "queue"    : "batch",
+        "schema"   : "local",
+        "cores"    : 84,
+        "gpus"     : 12
+    },
+
+    "local.summit" : {
+        "project"  : "geo111",
+        "queue"    : "batch",
+        "schema"   : "local",
+        "cores"    : 84,
+        "gpus"     : 12
+    },
+
+    "ornl.summit_prte" : {
+        "project"  : "geo111",
+        "queue"    : "batch",
+        "schema"   : "local",
+        "cores"    : 4200
+    }
+}
+
