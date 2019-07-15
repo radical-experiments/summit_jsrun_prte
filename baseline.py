@@ -59,21 +59,18 @@ if __name__ == '__main__':
         umgr.add_pilots(pilot)
 
         # Create a workload of ComputeUnits.
-        # Each compute unit runs '/bin/date'.
-
-        n = 1  # number of units to run
+        n = 32  # number of units to run
         report.info('create %d unit description(s)\n\t' % n)
 
         cuds = list()
         for i in range(0, n):
-
             # create a new CU description, and fill it.
             cud = rp.ComputeUnitDescription()
             cud.executable       = '/ccs/home/mturilli1/experiments/summit_jsrun_prte/bin/stress'
             cud.arguments        = ['--cpu 1', '--timeout 900s']
             cud.gpu_processes    = 0
             cud.cpu_processes    = 1
-            cud.cpu_threads      = 1
+            cud.cpu_threads      = 4
             cud.cpu_process_type = rp.POSIX
             cud.cpu_thread_type  = rp.POSIX
             cuds.append(cud)
