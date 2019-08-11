@@ -59,7 +59,7 @@ if __name__ == '__main__':
         umgr.add_pilots(pilot)
 
         # Create a workload of ComputeUnits.
-        n = 32  # number of units to run
+        n = 1024  # number of units to run
         report.info('create %d unit description(s)\n\t' % n)
 
         cuds = list()
@@ -67,7 +67,7 @@ if __name__ == '__main__':
             # create a new CU description, and fill it.
             cud = rp.ComputeUnitDescription()
             cud.executable       = '/ccs/home/mturilli1/experiments/summit_jsrun_prte/bin/stress'
-            cud.arguments        = ['--cpu 1', '--timeout 900s']
+            cud.arguments        = ['--cpu','1','--timeout','900s']
             cud.gpu_processes    = 0
             cud.cpu_processes    = 1
             cud.cpu_threads      = 4
