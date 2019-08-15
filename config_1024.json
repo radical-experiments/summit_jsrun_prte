@@ -19,7 +19,7 @@
         "project"  : "csc343",
         "queue"    : "batch",
         "schema"   : "local",
-        "cores"    : 8568
+        "cores"    : 4368
     }
 }
 
