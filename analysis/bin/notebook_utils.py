@@ -7,7 +7,6 @@ import radical.utils as ru
 import radical.pilot as rp
 import radical.analytics as ra
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 
 from cycler import cycler
 from radical.utils.profile import *
